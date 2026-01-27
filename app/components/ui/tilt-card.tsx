@@ -34,7 +34,7 @@ export function TiltCard({ children, className, href, target }: TiltCardProps) {
         }
     };
 
-    const handleMouseMove = (e: React.MouseEvent<HTMLDivElement>) => {
+    const handleMouseMove = (e: React.MouseEvent<HTMLElement>) => {
         if (!rectRef.current) return;
 
         const width = rectRef.current.width;
@@ -61,7 +61,8 @@ export function TiltCard({ children, className, href, target }: TiltCardProps) {
 
     return (
         <Component
-            // @ts-ignore - motion.a and motion.div have slightly different props but compatible here
+            // @ts-expect-error - Polymorphic refs are tricky with framer-motion unique types
+
             ref={ref}
             href={href}
             target={target}
