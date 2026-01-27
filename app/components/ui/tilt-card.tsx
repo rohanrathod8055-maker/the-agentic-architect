@@ -12,7 +12,7 @@ interface TiltCardProps {
 }
 
 export function TiltCard({ children, className, href, target }: TiltCardProps) {
-    const ref = useRef<HTMLDivElement>(null);
+    const ref = useRef<any>(null);
 
     // Motion values for mouse position
     const x = useMotionValue(0);
@@ -34,7 +34,7 @@ export function TiltCard({ children, className, href, target }: TiltCardProps) {
         }
     };
 
-    const handleMouseMove = (e: React.MouseEvent<HTMLElement>) => {
+    const handleMouseMove = (e: any) => {
         if (!rectRef.current) return;
 
         const width = rectRef.current.width;
@@ -61,8 +61,6 @@ export function TiltCard({ children, className, href, target }: TiltCardProps) {
 
     return (
         <Component
-            // @ts-expect-error - Polymorphic refs are tricky with framer-motion unique types
-
             ref={ref}
             href={href}
             target={target}
