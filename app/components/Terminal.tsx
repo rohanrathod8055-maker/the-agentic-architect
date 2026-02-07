@@ -56,7 +56,7 @@ PERSONALITY (Rika):
 - Can discuss Rohan's projects, skills, and goals
 - Encourages people to hire Rohan or collaborate
 
-Your responses should be concise (2-3 sentences max), helpful, and showcase Rohan's expertise.`;
+Your responses should be detailed and comprehensive (4-6 sentences), helpful, and showcase Rohan's expertise in depth.`;
 
 // Quick keyword responses for instant replies
 const QUICK_RESPONSES: Record<string, string> = {
@@ -97,15 +97,21 @@ async function getRikaAIResponse(userMessage: string): Promise<string> {
 function getKeywordResponse(msg: string): string {
     const lower = msg.toLowerCase();
 
-    if (lower.includes('project')) return "Rohan's built 5+ projects including a Manhwa Aggregator, YouTube AI Dashboard, and 3D Asset Generator. His work focuses on AI-powered automation and intelligent systems.";
-    if (lower.includes('skill') || lower.includes('tech')) return "Rohan specializes in AI Agents, Next.js, React, Python, and LLM integration (GPT-4, Claude, Gemini). He's an expert in rapid prototyping and full-stack development.";
-    if (lower.includes('contact') || lower.includes('hire') || lower.includes('email')) return "You can reach Rohan at rohanrathod@example.com or check his GitHub at github.com/rohanrathod. He's open to freelance work and full-time opportunities!";
-    if (lower.includes('japan') || lower.includes('study')) return "Rohan is preparing to study abroad in Japan to advance his expertise in AI research and international software development. He's passionate about Japanese culture and innovation.";
-    if (lower.includes('experience') || lower.includes('work')) return "Rohan has 2+ years of coding experience as a freelance AI-focused developer. He's delivered 5+ production apps with 100% client satisfaction, specializing in web, mobile, and AI agent systems.";
-    if (lower.includes('who') || lower.includes('rohan')) return "Rohan Rathod is a 19-year-old AI-first developer from Solapur, India. He's a BCS student who builds intelligent systems using cutting-edge AI technologies.";
-    if (lower.includes('education') || lower.includes('college')) return "Rohan is currently in his 2nd year of BCS at DHB Soni College, Solapur (2025-2028). He's active in coding clubs and AI experimentation projects.";
+    if (lower.includes('project')) return "Rohan has built an outstanding portfolio of 5+ production-ready applications! His flagship project is the **Manhwa Aggregator Platform** serving 10,000+ daily users with AI-powered recommendations and real-time chapter tracking, built with Next.js, Python, and Puppeteer. He's also created a **YouTube Analytics AI Dashboard** using Firebase and Gemini AI that provides automated content strategy insights, plus an **AI-Powered 3D Asset Generator** using Blender API that reduced asset creation time by 60%. Every project showcases his expertise in AI integration and full-stack development!";
 
-    return "I'm Rika, Rohan's AI assistant! I can tell you about his projects, technical skills, work experience, or how to contact him. What interests you?";
+    if (lower.includes('skill') || lower.includes('tech')) return "Rohan is a versatile full-stack developer with deep AI expertise! He specializes in **AI Agent Architecture & Development**, building autonomous systems using GPT-4, Claude, and Gemini APIs with LangChain and advanced prompt engineering. On the frontend, he masters Next.js, React, TypeScript, Tailwind CSS, Framer Motion, and GSAP. His backend skills include Node.js, Python, Firebase, and MongoDB. He's proficient in cross-platform development for web and mobile, with a focus on rapid prototyping and delivering production-ready applications quickly!";
+
+    if (lower.includes('contact') || lower.includes('hire') || lower.includes('email')) return "You can reach Rohan directly at **rohanrathod@example.com** for project inquiries and collaboration opportunities! He's also active on **GitHub at github.com/rohanrathod** and **LinkedIn at linkedin.com/in/rohanrathod**. Rohan is currently open to freelance projects, internships, and full-time opportunities, especially involving AI development and full-stack applications. He's maintained 100% client satisfaction across all his work, so you'd be collaborating with someone reliable and highly skilled!";
+
+    if (lower.includes('japan') || lower.includes('study')) return "Rohan is actively preparing to **study abroad in Japan** to advance his expertise in AI research and international software development! He's deeply passionate about Japanese culture and innovation, seeing Japan as the perfect place to combine his love for technology with cutting-edge AI research. This goal reflects his commitment to continuous learning and working on globally impactful technologies. It's a big dream that drives his current work and academic excellence!";
+
+    if (lower.includes('experience') || lower.includes('work')) return "Rohan has **2+ years of active coding experience** and has been working as a **freelance AI-focused developer since 2024**. He's delivered 5+ production-ready applications across web and mobile platforms with a perfect **100% client satisfaction rate**! His approach combines rapid prototyping with robust AI-driven architecture, transforming concepts into functional products efficiently. He specializes in building intelligent systems that automate workflows, whether through web applications with Next.js, mobile apps, or AI agent systems integrating GPT-4, Claude, and Gemini APIs!";
+
+    if (lower.includes('who') || lower.includes('rohan')) return "Rohan Rathod is a **19-year-old AI-first developer** from Solapur, Maharashtra, India. He's currently a 2nd year BCS student at DHB Soni College (2025-2028), actively involved in coding clubs and AI experimentation projects. What sets him apart is his specialization in **AI Agent Architecture and Development** - he doesn't just use AI tools, he builds intelligent autonomous systems from scratch. He's a versatile full-stack developer creating websites, mobile apps, and AI-powered platforms. He's also preparing to study in Japan to further his AI expertise internationally!";
+
+    if (lower.includes('education') || lower.includes('college')) return "Rohan is in his **2nd year of Bachelor of Computer Science (BCS) at DHB Soni College, Solapur** (2025-2028). He's an active member of coding clubs and constantly experimenting with AI and ML projects outside the curriculum. His focus areas include AI/ML, Web Development, and Software Engineering. Impressively, he balances his studies with real-world freelance work, having delivered 5+ production applications while still in college. He's planning to study abroad in Japan after his BCS, showing his dedication to international education and global AI research!";
+
+    return "Hi! I'm Rika, Rohan's AI assistant with complete knowledge of his work! I can provide detailed information about his 5+ production projects (including a Manhwa platform with 10K+ users), his technical skills in AI Agent Architecture and full-stack development, his 2+ years of freelance experience with perfect client satisfaction, his education at DHB Soni College, or his plans to study in Japan. What would you like to explore in depth?";
 }
 
 export default function Terminal() {
