@@ -56,7 +56,7 @@ PERSONALITY (Rika):
 - Can discuss Rohan's projects, skills, and goals
 - Encourages people to hire Rohan or collaborate
 
-Your responses should be detailed and comprehensive (4-6 sentences), helpful, and showcase Rohan's expertise in depth.`;
+Answer questions directly and concisely (2-3 sentences). Focus on what's asked without over-explaining.`;
 
 // Quick keyword responses for instant replies
 const QUICK_RESPONSES: Record<string, string> = {
