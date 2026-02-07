@@ -123,12 +123,7 @@ function getDetailedFallback(msg: string): string {
         return "Rohan specializes in AI Agent Architecture, building autonomous systems with GPT-4, Claude, and Gemini APIs. He uses LangChain and prompt engineering to create intelligent systems that handle real-world tasks.";
     }
 
-    // Default - varied long responses
-    const defaultResponses = [
-        "That's a great question! I'm Rika, Rohan's AI assistant with comprehensive knowledge of his entire portfolio and expertise. I can provide detailed, in-depth information about his impressive collection of 5+ projects (including the Manhwa Aggregator platform serving 10,000+ daily users with AI recommendations), his extensive technical skills in AI Agent Architecture and modern full-stack development, his successful freelance career with 100% client satisfaction, his educational journey at DHB Soni College where he's excelling in BCS studies, or his exciting international aspirations to study in Japan. Which aspect of Rohan's work and background would you like me to dive into?",
-        "I'd absolutely love to help you understand more about Rohan and his work! As his dedicated AI assistant, I have complete, detailed knowledge about everything - from his cutting-edge AI-operated projects like the Manhwa Aggregator, YouTube Analytics Dashboard, and 3D Asset Generator, to his robust technical expertise spanning Next.js, React, Python, TypeScript, and advanced LLM integration with GPT-4, Claude, and Gemini. I can also share insights about his 2+ years of professional experience, his current BCS education, and even his future plans for international studies. What specific topic would you find most interesting or helpful?",
-        "Thanks so much for your interest! I'm here to give you comprehensive, detailed insights into everything about Rohan's capabilities and achievements. Whether you're curious about his specialized AI agent development skills and how he builds intelligent autonomous systems, his portfolio of full-stack projects that collectively serve thousands of users daily, his proven track record of 2+ years in freelance development with perfect client satisfaction scores, his academic background and involvement in BCS at DHB Soni College, or his ambitious goal to pursue advanced AI education in Japan - I can provide thorough, helpful information on all these topics and more. What would you like to explore in depth?",
-    ];
 
-    return defaultResponses[Math.floor(Math.random() * defaultResponses.length)];
+    // Default
+    return "I'm Rika, Rohan's AI assistant. Ask me about his projects, skills, experience, or how to contact him!";
 }
