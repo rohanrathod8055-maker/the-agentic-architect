@@ -1,6 +1,7 @@
 "use client";
 
 import { TiltCard } from "./ui/tilt-card";
+import { GlowBorderCardConic } from "./ui/glow-border-card";
 import { Brain, Code2, Database, MapPin, Cpu } from "lucide-react";
 
 export default function BentoStack() {
@@ -14,17 +15,19 @@ export default function BentoStack() {
             <div className="grid grid-cols-1 md:grid-cols-4 gap-4 auto-rows-[220px]">
                 {/* Main Skill: AI */}
                 <div className="md:col-span-2 md:row-span-2">
-                    <TiltCard className="h-full bg-[#111] border-[#222]">
-                        <div className="h-full flex flex-col justify-between">
-                            <div className="p-3 bg-blue-600/10 w-fit rounded-lg border border-blue-600/20">
-                                <Brain className="w-8 h-8 text-blue-500" />
+                    <GlowBorderCardConic className="h-full">
+                        <TiltCard className="h-full bg-transparent border-none">
+                            <div className="h-full flex flex-col justify-between">
+                                <div className="p-3 bg-blue-600/10 w-fit rounded-lg border border-blue-600/20">
+                                    <Brain className="w-8 h-8 text-blue-500" />
+                                </div>
+                                <div>
+                                    <h3 className="text-2xl font-bold mb-2 text-white">AI Agent Development</h3>
+                                    <p className="text-neutral-400">Building autonomous systems that think, plan, and execute. Gemini, OpenAI, Anthropic integrations.</p>
+                                </div>
                             </div>
-                            <div>
-                                <h3 className="text-2xl font-bold mb-2 text-white">AI Agent Development</h3>
-                                <p className="text-neutral-400">Building autonomous systems that think, plan, and execute. Gemini, OpenAI, Anthropic integrations.</p>
-                            </div>
-                        </div>
-                    </TiltCard>
+                        </TiltCard>
+                    </GlowBorderCardConic>
                 </div>
 
                 {/* Stack 2: Coding */}

@@ -2,21 +2,29 @@
 
 import { motion } from "framer-motion";
 import Terminal from "./components/Terminal";
-import VizcomReveal from "./components/vizcom-reveal";
+import CinematicHero from "./components/cinematic-hero";
+import ProfessionalAbout from "./components/professional-about";
+import SkillsGrid from "./components/skills-grid";
+import ExperienceTimeline from "./components/experience-timeline";
+import ContactCTA from "./components/contact-cta";
+import Footer from "./components/footer";
 import { TiltCard } from "./components/ui/tilt-card";
 import ScrollTextMotion from "./components/ui/scroll-text-motion";
 import ProjectInitiation from "./components/project-initiation";
 import GsapText from "./components/ui/gsap-text";
 import GsapScrollMask from "./components/ui/gsap-scroll-mask";
-import FlyThrough from "./components/ui/fly-through";
 import BentoStack from "./components/bento-stack";
 import ProjectShowcase from "./components/project-showcase";
 import LinesGallery from "./components/lines-gallery";
 import AgenticHUD from "./components/agentic-hud";
 import InteractionOverlay from "./components/interaction-overlay";
-import GridBackground from "./components/ui/grid-background";
+import PerspectiveGrid from "./components/ui/perspective-grid";
 import FloatingDock from "./components/ui/floating-dock";
 import RevealSection from "./components/ui/reveal-section";
+import FlipText from "./components/ui/flip-text";
+import LightLines from "./components/ui/light-lines";
+import AnimatedButton from "./components/ui/animated-button";
+import ParticleField from "./components/ui/particle-field";
 import {
   Database,
   MapPin,
@@ -51,15 +59,19 @@ const projects = [
 export default function Home() {
   return (
     <main id="top" className="relative min-h-screen bg-[#050505] text-white">
-      <GridBackground />
+      <PerspectiveGrid className="fixed inset-0 opacity-10" />
+      <ParticleField className="opacity-40" />
       <InteractionOverlay />
       <AgenticHUD />
       <FloatingDock />
       {/* 
-         HERO SECTION: VIZCOM REVEAL 
-         Simulates the "Sketch to Reality" effect
+         CINEMATIC HERO SECTION 
+         Modern parallax fade-in with character stagger
       */}
-      <VizcomReveal />
+      <CinematicHero />
+
+      {/* ABOUT ME SECTION */}
+      <ProfessionalAbout />
 
       {/* 
          Introduction / Philosophy 
@@ -70,9 +82,9 @@ export default function Home() {
             <div className="md:col-span-7">
               <span className="font-mono text-blue-500 text-xs tracking-widest mb-6 block">MANIFESTO_V1</span>
               <h2 className="text-5xl md:text-7xl font-bold tracking-tighter leading-[0.9] mb-8 text-white text-balance">
-                <GsapText className="font-light text-neutral-300">THE GAP BETWEEN</GsapText><br />
-                <span className="text-neutral-500 font-normal"><GsapText>THOUGHT</GsapText></span> <GsapText className="font-thin italic">AND</GsapText> <span className="text-white font-black"><GsapText>REALITY</GsapText></span><br />
-                <GsapText>IS DISAPPEARING.</GsapText>
+                <FlipText text="THE GAP BETWEEN" className="font-light text-neutral-300" /><br />
+                <span className="text-neutral-500 font-normal"><FlipText text="THOUGHT" /></span> <FlipText text="AND" className="font-thin italic" /> <span className="text-white font-black"><FlipText text="REALITY" /></span><br />
+                <FlipText text="IS DISAPPEARING." />
               </h2>
             </div>
 
@@ -85,21 +97,25 @@ export default function Home() {
               <p className="text-lg text-neutral-400 leading-relaxed mb-8">
                 <GsapText>My mission is to fuse high-fidelity design with agentic intelligence, creating interfaces that feel less like tools and more like extensions of the mind.</GsapText>
               </p>
-              <a href="#projects" className="inline-flex items-center gap-2 text-white border-b border-white pb-1 w-fit hover:text-blue-500 hover:border-blue-500 transition-colors">
+              <AnimatedButton href="#projects" variant="secondary" className="w-fit">
                 View The Architecture <ArrowRight className="w-4 h-4" />
-              </a>
+              </AnimatedButton>
             </div>
           </div>
         </section>
       </RevealSection>
 
+      {/* SKILLS SECTION */}
+      <SkillsGrid />
+
       {/* 
          MARQUEE: TECH STACK
       */}
-      <section className="py-24 overflow-hidden bg-[#050505]">
+      <section className="py-24 overflow-hidden bg-[#050505] relative">
+        <LightLines lineCount={3} duration={4} className="absolute inset-0 opacity-30" />
         <ScrollTextMotion baseVelocity={-5}>NEXT.JS PYTHON FLUX REACT THREE.JS AI-AGENTS </ScrollTextMotion>
         <ScrollTextMotion baseVelocity={5}>TYPESCRIPT TAILWIND FRAMER-MOTION GSAP BLENDER </ScrollTextMotion>
-        <ScrollTextMotion baseVelocity={-3}>VIBE-CODING CYBERPUNK GENERATIVE-ART NEURAL-NETS </ScrollTextMotion>
+        <ScrollTextMotion baseVelocity={-3}>RAPID-PROTOTYPING MODERN-DESIGN GENERATIVE-ART NEURAL-NETS </ScrollTextMotion>
       </section>
 
       {/* 
@@ -117,13 +133,18 @@ export default function Home() {
         <ProjectShowcase />
       </GsapScrollMask>
 
-      <FlyThrough />
-
       <section id="archives">
         <LinesGallery />
       </section>
 
-      <ProjectInitiation />
+      {/* EXPERIENCE TIMELINE */}
+      <ExperienceTimeline />
+
+      {/* CONTACT SECTION */}
+      <ContactCTA />
+
+      {/* FOOTER */}
+      <Footer />
     </main>
   );
 }
