@@ -35,7 +35,7 @@ export default function ContactCTA() {
 
                     {/* Primary CTA */}
                     <motion.a
-                        href="mailto:rohanrathod@example.com"
+                        href="mailto:rohanrathod8055@gmail.com"
                         className="inline-flex items-center gap-3 px-8 py-4 bg-blue-600 text-white font-semibold rounded-xl hover:bg-blue-700 transition-all text-lg group"
                         whileHover={{ scale: 1.05 }}
                         whileTap={{ scale: 0.95 }}
