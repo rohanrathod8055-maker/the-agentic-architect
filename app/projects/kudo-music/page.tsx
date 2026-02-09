@@ -100,7 +100,7 @@ export default function KudoMusicPage() {
             <div className="fixed bottom-1/4 -right-32 w-96 h-96 bg-emerald-500/20 rounded-full blur-[120px] pointer-events-none" />
 
             {/* Hero Section */}
-            <section className="relative py-20 px-6 md:px-12 border-b border-neutral-800/50 z-10">
+            <section className="relative py-12 md:py-20 px-4 md:px-12 border-b border-neutral-800/50 z-10">
                 <div className="max-w-5xl mx-auto">
                     {/* Back Button */}
                     <motion.div
@@ -262,7 +262,7 @@ export default function KudoMusicPage() {
             </section>
 
             {/* Skills */}
-            <section className="py-20 px-6 md:px-12 relative z-10">
+            <section className="py-12 md:py-20 px-4 md:px-12 relative z-10">
                 <div className="max-w-5xl mx-auto">
                     <motion.h2
                         initial={{ opacity: 0, y: 20 }}

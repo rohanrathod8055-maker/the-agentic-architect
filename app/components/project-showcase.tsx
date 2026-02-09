@@ -36,7 +36,7 @@ const projects = [
 
 export default function ProjectShowcase() {
     return (
-        <section id="projects" className="py-32 px-6 md:px-12 relative">
+        <section id="projects" className="py-16 md:py-32 px-4 md:px-12 relative">
             <div className="max-w-6xl mx-auto">
                 {/* Section Header */}
                 <motion.div
@@ -44,12 +44,12 @@ export default function ProjectShowcase() {
                     whileInView={{ opacity: 1, y: 0 }}
                     viewport={{ once: true }}
                     transition={{ duration: 0.6 }}
-                    className="mb-16"
+                    className="mb-8 md:mb-16"
                 >
-                    <h2 className="text-4xl md:text-5xl font-bold tracking-tight text-white mb-4">
+                    <h2 className="text-3xl md:text-5xl font-bold tracking-tight text-white mb-3">
                         Projects
                     </h2>
-                    <p className="text-neutral-400 text-lg max-w-2xl">
+                    <p className="text-neutral-400 text-sm md:text-lg max-w-2xl">
                         Production applications I've built and shipped.
                     </p>
                 </motion.div>
@@ -64,17 +64,17 @@ export default function ProjectShowcase() {
                             viewport={{ once: true }}
                             transition={{ duration: 0.5, delay: index * 0.1 }}
                         >
-                            <div className="group relative p-8 rounded-2xl bg-[#0a0a0a] border border-neutral-800/50 hover:border-neutral-600 hover:bg-[#0d0d0d] transition-all duration-300">
+                            <div className="group relative p-5 md:p-8 rounded-xl md:rounded-2xl bg-[#0a0a0a] border border-neutral-800/50 hover:border-neutral-600 hover:bg-[#0d0d0d] transition-all duration-300">
                                 <div className="flex flex-col md:flex-row md:items-start justify-between gap-6">
                                     {/* Left Side */}
                                     <div className="flex-1">
                                         <div className="flex items-center gap-3 mb-3">
                                             <span className="text-2xl">{project.emoji}</span>
-                                            <h3 className="text-2xl md:text-3xl font-semibold text-white group-hover:text-blue-400 transition-colors">
+                                            <h3 className="text-xl md:text-3xl font-semibold text-white group-hover:text-blue-400 transition-colors">
                                                 {project.title}
                                             </h3>
                                         </div>
-                                        <p className="text-neutral-400 mb-4 max-w-xl">
+                                        <p className="text-neutral-400 text-sm md:text-base mb-4 max-w-xl">
                                             {project.description}
                                         </p>
                                         <div className="flex flex-wrap gap-2 mb-6">
