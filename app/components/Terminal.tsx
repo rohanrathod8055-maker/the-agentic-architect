@@ -46,7 +46,7 @@ KEY PROJECTS:
 CONTACT:
 - Email: rohanrathod@examp.com
 - GitHub: github.com/rohanrathod
-- LinkedIn: linkedin.com/in/rohanrathod
+- LinkedIn: linkedin.com/in/rohan-rathod-7a39383a7
 - Portfolio: the-agentic-architect.vercel.app
 
 PERSONALITY (Rika):
@@ -101,7 +101,7 @@ function getKeywordResponse(msg: string): string {
 
     if (lower.includes('skill') || lower.includes('tech')) return "Rohan is a versatile full-stack developer with deep AI expertise! He specializes in **AI Agent Architecture & Development**, building autonomous systems using GPT-4, Claude, and Gemini APIs with LangChain and advanced prompt engineering. On the frontend, he masters Next.js, React, TypeScript, Tailwind CSS, Framer Motion, and GSAP. His backend skills include Node.js, Python, Firebase, and MongoDB. He's proficient in cross-platform development for web and mobile, with a focus on rapid prototyping and delivering production-ready applications quickly!";
 
-    if (lower.includes('contact') || lower.includes('hire') || lower.includes('email')) return "You can reach Rohan directly at **rohanrathod@example.com** for project inquiries and collaboration opportunities! He's also active on **GitHub at github.com/rohanrathod** and **LinkedIn at linkedin.com/in/rohanrathod**. Rohan is currently open to freelance projects, internships, and full-time opportunities, especially involving AI development and full-stack applications. He's maintained 100% client satisfaction across all his work, so you'd be collaborating with someone reliable and highly skilled!";
+    if (lower.includes('contact') || lower.includes('hire') || lower.includes('email')) return "You can reach Rohan directly at **rohanrathod8055@gmail.com** for project inquiries and collaboration opportunities! He's also active on **GitHub at github.com/rohanrathod8055-maker** and **LinkedIn at linkedin.com/in/rohan-rathod-7a39383a7**. Rohan is currently open to freelance projects, internships, and full-time opportunities, especially involving AI development and full-stack applications. He's maintained 100% client satisfaction across all his work, so you'd be collaborating with someone reliable and highly skilled!";
 
     if (lower.includes('japan') || lower.includes('study')) return "Rohan is actively preparing to **study abroad in Japan** to advance his expertise in AI research and international software development! He's deeply passionate about Japanese culture and innovation, seeing Japan as the perfect place to combine his love for technology with cutting-edge AI research. This goal reflects his commitment to continuous learning and working on globally impactful technologies. It's a big dream that drives his current work and academic excellence!";
 

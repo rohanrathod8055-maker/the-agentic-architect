@@ -13,8 +13,8 @@ export default function Footer() {
 
     const socials = [
         { icon: Github, href: "https://github.com/rohanrathod" },
-        { icon: Linkedin, href: "https://linkedin.com/in/rohanrathod" },
-        { icon: Mail, href: "mailto:rohanrathod@example.com" },
+        { icon: Linkedin, href: "https://www.linkedin.com/in/rohan-rathod-7a39383a7/" },
+        { icon: Mail, href: "mailto:rohanrathod8055@gmail.com" },
     ];
 
     return (
