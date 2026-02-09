@@ -29,7 +29,7 @@ const projects = [
         emoji: "📚",
         category: "Full Stack",
         tech: ["Next.js", "Python", "Puppeteer"],
-        description: "Automated manga tracking platform with real-time chapter updates. Serving 10K+ daily users with AI-powered recommendations.",
+        description: "Automated manga tracking platform with real-time chapter updates and AI-powered recommendations.",
         externalLink: "https://inkflow-roan.vercel.app/",
     }
 ];

@@ -235,29 +235,29 @@ export default function ResumePage() {
 
                         <div className="space-y-4 ml-13">
                             <div className="border-l-4 border-blue-600 pl-4">
+                                <h3 className="text-lg font-bold text-gray-900">InkFlow - Tech News Aggregator</h3>
+                                <p className="text-blue-600 font-semibold text-sm mb-2">Next.js 16 • Supabase • Vercel Cron • AI Categorization</p>
+                                <p className="text-gray-700 text-sm leading-relaxed">
+                                    Built manga-inspired tech news platform that scrapes 100+ articles daily from 7 major sources (TechCrunch, The Verge, etc.).
+                                    Features AI auto-categorization, full content extraction, and real-time updates. Live at inkflow-news.vercel.app
+                                </p>
+                            </div>
+
+                            <div className="border-l-4 border-blue-600 pl-4">
+                                <h3 className="text-lg font-bold text-gray-900">Kudo Music - Music Streaming PWA</h3>
+                                <p className="text-blue-600 font-semibold text-sm mb-2">Next.js 16 • TypeScript • Zustand • JioSaavn API</p>
+                                <p className="text-gray-700 text-sm leading-relaxed">
+                                    Created Spotify-like PWA streaming millions of songs with synced lyrics, playlist management, and Spotify import.
+                                    Features responsive mobile design, audio player with shuffle/repeat, and offline playlist storage. Live at kudo-music.vercel.app
+                                </p>
+                            </div>
+
+                            <div className="border-l-4 border-blue-600 pl-4">
                                 <h3 className="text-lg font-bold text-gray-900">Manhwa Aggregator Platform</h3>
                                 <p className="text-blue-600 font-semibold text-sm mb-2">Next.js • Python • Puppeteer • AI Integration</p>
                                 <p className="text-gray-700 text-sm leading-relaxed">
                                     Built automated manga tracking system with AI-powered recommendations and real-time chapter updates.
-                                    Leveraged web scraping and intelligent caching for 10,000+ daily users. Deployed at inkflow-roan.vercel.app
-                                </p>
-                            </div>
-
-                            <div className="border-l-4 border-blue-600 pl-4">
-                                <h3 className="text-lg font-bold text-gray-900">YouTube Analytics AI Dashboard</h3>
-                                <p className="text-blue-600 font-semibold text-sm mb-2">Firebase • YouTube API • Gemini AI</p>
-                                <p className="text-gray-700 text-sm leading-relaxed">
-                                    Created AI-powered analytics dashboard that provides actionable growth insights for content creators.
-                                    Integrated Gemini AI for automated content strategy recommendations based on channel performance data.
-                                </p>
-                            </div>
-
-                            <div className="border-l-4 border-blue-600 pl-4">
-                                <h3 className="text-lg font-bold text-gray-900">AI-Powered 3D Asset Generator</h3>
-                                <p className="text-blue-600 font-semibold text-sm mb-2">Blender API • Python • AI Models</p>
-                                <p className="text-gray-700 text-sm leading-relaxed">
-                                    Developed procedural 3D asset generation pipeline using AI and Blender scripting. Automated texture
-                                    generation and model optimization for game engines, reducing asset creation time by 60%.
+                                    Leveraged web scraping and intelligent caching for seamless reading experience. Live at inkflow-roan.vercel.app
                                 </p>
                             </div>
                         </div>
