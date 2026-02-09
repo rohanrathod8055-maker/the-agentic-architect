@@ -16,6 +16,15 @@ const projects = [
         externalLink: "https://inkflow-news.vercel.app",
     },
     {
+        title: "Kudo Music",
+        emoji: "🎵",
+        category: "PWA / Full Stack",
+        tech: ["Next.js 16", "TypeScript", "Zustand"],
+        description: "Spotify-like music streaming PWA. Millions of songs, synced lyrics, playlist management, and Spotify import.",
+        internalLink: "/projects/kudo-music",
+        externalLink: "https://kudo-music.vercel.app",
+    },
+    {
         title: "Manhwa Aggregator",
         emoji: "📚",
         category: "Full Stack",
@@ -113,17 +122,6 @@ export default function ProjectShowcase() {
                         </motion.div>
                     ))}
                 </div>
-
-                {/* More projects hint */}
-                <motion.p
-                    initial={{ opacity: 0 }}
-                    whileInView={{ opacity: 1 }}
-                    viewport={{ once: true }}
-                    transition={{ duration: 0.5, delay: 0.3 }}
-                    className="text-center text-neutral-600 text-sm mt-12"
-                >
-                    More projects coming soon...
-                </motion.p>
 
                 {/* Rika Chat */}
                 <motion.div
