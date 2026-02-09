@@ -45,7 +45,7 @@ KEY PROJECTS:
 
 CONTACT:
 - Email: rohanrathod@examp.com
-- GitHub: github.com/rohanrathod
+- GitHub: github.com/rohanrathod8055-maker
 - LinkedIn: linkedin.com/in/rohan-rathod-7a39383a7
 - Portfolio: the-agentic-architect.vercel.app
 

@@ -5,7 +5,7 @@ import { Mail, Github, Linkedin, MapPin, ArrowRight } from "lucide-react";
 
 export default function ContactCTA() {
     const socials = [
-        { icon: Github, label: "GitHub", href: "https://github.com/rohanrathod" },
+        { icon: Github, label: "GitHub", href: "https://github.com/rohanrathod8055-maker" },
         { icon: Linkedin, label: "LinkedIn", href: "https://www.linkedin.com/in/rohan-rathod-7a39383a7/" },
     ];
 

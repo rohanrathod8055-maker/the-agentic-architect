@@ -95,7 +95,7 @@ function getDetailedFallback(msg: string): string {
 
     // Contact
     if (lower.includes('contact') || lower.includes('hire') || lower.includes('email') || lower.includes('reach')) {
-        return "Reach Rohan at rohanrathod@example.com or on GitHub: github.com/rohanrathod. He's open to freelance projects, internships, and full-time opportunities with 100% client satisfaction!";
+        return "Reach Rohan at rohanrathod8055@gmail.com or on GitHub: github.com/rohanrathod8055-maker. He's open to freelance projects, internships, and full-time opportunities with 100% client satisfaction!";
     }
 
     // Japan

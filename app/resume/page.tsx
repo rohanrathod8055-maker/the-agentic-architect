@@ -48,7 +48,7 @@ export default function ResumePage() {
                             </div>
                             <div className="flex items-center gap-2">
                                 <Globe className="w-4 h-4 text-blue-600" />
-                                <span>github.com/rohanrathod</span>
+                                <span>github.com/rohanrathod8055-maker</span>
                             </div>
                         </div>
                     </div>
