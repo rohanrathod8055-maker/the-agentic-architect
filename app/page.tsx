@@ -129,10 +129,7 @@ export default function Home() {
       */}
       <Terminal />
 
-      <GsapScrollMask>
-        <ProjectShowcase />
-      </GsapScrollMask>
-
+      <ProjectShowcase />
       <section id="archives">
         <LinesGallery />
       </section>
