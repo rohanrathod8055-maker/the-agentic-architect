@@ -3,7 +3,7 @@
 import { motion } from "framer-motion";
 import { ArrowUpRight, ExternalLink } from "lucide-react";
 import Link from "next/link";
-import AIChatCard from "./ui/ai-chat-card";
+
 
 const projects = [
     {
@@ -123,22 +123,6 @@ export default function ProjectShowcase() {
                     ))}
                 </div>
 
-                {/* Rika Chat */}
-                <motion.div
-                    initial={{ opacity: 0, y: 30 }}
-                    whileInView={{ opacity: 1, y: 0 }}
-                    viewport={{ once: true }}
-                    transition={{ duration: 0.5, delay: 0.4 }}
-                    className="mt-20"
-                >
-                    <div className="flex items-center gap-3 mb-6">
-                        <div className="w-2 h-2 rounded-full bg-green-500 animate-pulse" />
-                        <span className="text-sm text-neutral-400">Ask Rika about my work</span>
-                    </div>
-                    <div className="max-w-md">
-                        <AIChatCard />
-                    </div>
-                </motion.div>
             </div>
         </section>
     );
