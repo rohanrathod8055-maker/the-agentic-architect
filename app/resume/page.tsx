@@ -40,7 +40,7 @@ export default function ResumePage() {
                         <div className="grid grid-cols-2 md:grid-cols-3 gap-3 text-sm text-gray-700">
                             <div className="flex items-center gap-2">
                                 <Mail className="w-4 h-4 text-blue-600" />
-                                <span>rohanrathod@example.com</span>
+                                <span>rohanrathod8055@gmail.com</span>
                             </div>
                             <div className="flex items-center gap-2">
                                 <MapPin className="w-4 h-4 text-blue-600" />
