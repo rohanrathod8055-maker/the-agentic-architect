@@ -2,7 +2,7 @@
 
 import { motion, useMotionValue, useSpring, useTransform } from "framer-motion";
 import { useRef } from "react";
-import { Home, User, Code, Mail, Terminal } from "lucide-react";
+import { Home, User, Code, Mail, Award } from "lucide-react";
 
 export default function FloatingDock() {
     return (
@@ -11,6 +11,7 @@ export default function FloatingDock() {
                 <DockIcon href="#top" label="Home" icon={Home} />
                 <DockIcon href="#manifesto" label="About" icon={User} />
                 <DockIcon href="#projects" label="Work" icon={Code} />
+                <DockIcon href="#certifications" label="Certs" icon={Award} />
                 <DockIcon href="#contact" label="Contact" icon={Mail} />
             </div>
         </div>

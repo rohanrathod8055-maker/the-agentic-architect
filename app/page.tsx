@@ -6,6 +6,7 @@ import CinematicHero from "./components/cinematic-hero";
 import ProfessionalAbout from "./components/professional-about";
 import SkillsGrid from "./components/skills-grid";
 import ExperienceTimeline from "./components/experience-timeline";
+import CertificationsSection from "./components/certifications-section";
 import ContactCTA from "./components/contact-cta";
 import Footer from "./components/footer";
 import { TiltCard } from "./components/ui/tilt-card";
@@ -136,6 +137,9 @@ export default function Home() {
 
       {/* EXPERIENCE TIMELINE */}
       <ExperienceTimeline />
+
+      {/* CERTIFICATIONS SECTION */}
+      <CertificationsSection />
 
       {/* CONTACT SECTION */}
       <ContactCTA />
